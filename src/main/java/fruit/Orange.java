@@ -27,7 +27,7 @@ public class Orange implements Fruit {
 
     @Override
     public int getPriceInCents() {
-        return (int) (this.pricePerPoundInCents * (this.weightInOunces / 16.0));
+        return (int) Math.round(this.pricePerPoundInCents * (this.weightInOunces / 16.0));
     }
 
 }
